@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button type="button" onclick="createFile()">click</button>
+
+    <script>
+      function createFile() {
+        fetch("http://localhost:4000", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            filename: "uzair.txt",
+            content: "Hello Uzair, your file has been created!",
+          }),
+        })
+          .then((res) => res.text())
+          .then((msg) => alert(msg))
+          .catch((err) => console.error("Error:", err));
+      }
+    </script>
+  </body>
+</html>
