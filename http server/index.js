@@ -10,4 +10,4 @@ const server = http.createServer((req,res)=>{
         res.end("Hello from server");
     })
 });
-server.listen(port,()=>console.log(`server listen port :${port}` ))
+server.listen(port,()=>console.log(`server listen port :${port}` ));
