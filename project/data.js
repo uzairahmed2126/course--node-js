@@ -1,0 +1,13 @@
+const dummyData = [
+  { id: 1, name: "Alice", email: "alice@example.com", role: "Admin", status: "Active" },
+  { id: 2, name: "Bob", email: "bob@example.com", role: "User", status: "Inactive" },
+  { id: 3, name: "Charlie", email: "charlie@example.com", role: "Vendor", status: "Active" },
+  { id: 4, name: "Diana", email: "diana@example.com", role: "User", status: "Pending" },
+  { id: 5, name: "Ethan", email: "ethan@example.com", role: "Admin", status: "Active" },
+  { id: 6, name: "Fiona", email: "fiona@example.com", role: "Vendor", status: "Blocked" },
+  { id: 7, name: "George", email: "george@example.com", role: "User", status: "Active" },
+  { id: 8, name: "Hannah", email: "hannah@example.com", role: "Vendor", status: "Inactive" },
+  { id: 9, name: "Ian", email: "ian@example.com", role: "User", status: "Pending" },
+  { id: 10, name: "Julia", email: "julia@example.com", role: "Admin", status: "Active" },
+];
+export default dummyData;
